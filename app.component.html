@@ -1,0 +1,26 @@
+<!-- app.component.html -->
+<div class="container">
+    <h1>User Information</h1>
+
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input [(ngModel)]="name" id="name" placeholder="Enter your name" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="age">Age:</label>
+        <input [(ngModel)]="age" id="age" type="number" placeholder="Enter your age" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="color">Favorite Color:</label>
+        <input [(ngModel)]="favoriteColor" id="color" placeholder="Enter your favorite color" class="form-control" />
+    </div>
+
+    <button class="btn btn-primary" (click)="resetForm()">Reset</button>
+
+    <h3>Live Preview:</h3>
+    <p><strong>Name:</strong> {{ name }}</p>
+    <p><strong>Age:</strong> {{ age }}</p>
+    <p><strong>Favorite Color:</strong> {{ favoriteColor }}</p>
+</div>
